@@ -6,10 +6,11 @@ sudo apt install python3-build python3-installer git
 ```
 ## Setting up the software architecture
 ```bash
-mkdir rp_lidar
-cd rp_lidar
+mkdir robot_driver
+cd robot_driver
 ```
-## Installing the rp_lidar software:
+## Installing the rp_lidar software
+For more info, check: https://github.com/Slamtec/rplidar_sdk
 ```bash
 git clone https://github.com/Slamtec/rplidar_sdk.git
 cd rplidar_sdk
@@ -18,14 +19,14 @@ cd ..
 ```
 ## Installing the robotDriver software and test script
 ```bash
-cd rp_lidar
+cd robot_driver
 git clone https://github.com/hildeesch/rbt_shooting_robots.git
 ```
 
 ## Installing the potmeter software 
 For more info, check: https://github.com/abelectronicsuk/ABElectronics_Python_Libraries
 ```bash
-cd rp_lidar
+cd robot_driver
 git clone https://github.com/abelectronicsuk/ABElectronics_Python_Libraries.git
 cd ABElectronics_Python_Libraries
 python3 -m build
@@ -41,6 +42,6 @@ NOTE: it will start driving
 The prints tell you what the robot should be doing. Check if there are any mismatches between the prints and the behaviour.
 ```bash
 ssh into the raspberry
-cd rp_lidar
+cd robot_driver
 python3 building_day_test_script.py
 ```
